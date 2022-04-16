@@ -69,9 +69,7 @@ public class Player {
         display.add(cards);
     }
 
-    public boolean takeCardFromTheForest(int index) {
-        return false;
-    }
+    public boolean takeCardFromTheForest(int index) {return false;}
 
     public boolean takeFromDecay() {
         return false;
