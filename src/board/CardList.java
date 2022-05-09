@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class CardList {
 
-    ArrayList<Card> cList;
+    private ArrayList<Card> cList;
 
     public CardList() {
         cList = new ArrayList<>();

@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class Display implements Displayable{
 
-    ArrayList<Card> displayList;
+    private final ArrayList<Card> displayList = new ArrayList<>();
 
     public void add(Card cards) {
         displayList.add(cards);
@@ -23,6 +23,4 @@ public class Display implements Displayable{
     public Card removeElement(int index) {
         return displayList.remove(index);
     }
-
-
 }

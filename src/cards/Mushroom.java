@@ -7,31 +7,31 @@ public class Mushroom extends EdibleItem{
     public Mushroom(CardType type, String cardName) {
         super(type, cardName);
         switch (cardName){
-            case "HoneyFungus":
+            case "honeyfungus":
                 sticksPerMushroom = 1;
                 break;
-            case "TreeEar":
+            case "treeear":
                 sticksPerMushroom = 2;
                 break;
-            case "LawyersWig":
+            case "lawyerswig":
                 sticksPerMushroom = 1;
                 break;
-            case "Shiitake":
+            case "shiitake":
                 sticksPerMushroom = 2;
                 break;
-            case "HenOfWoods":
+            case "henofwoods":
                 sticksPerMushroom = 1;
                 break;
-            case "BirchBolete":
+            case "birchbolete":
                 sticksPerMushroom = 2;
                 break;
-            case "Porcini":
+            case "porcini":
                 sticksPerMushroom = 3;
                 break;
-            case "Chanterelle":
+            case "chanterelle":
                 sticksPerMushroom = 2;
                 break;
-            case "Morel":
+            case "morel":
                 sticksPerMushroom = 4;
                 break;
         }

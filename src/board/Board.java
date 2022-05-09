@@ -60,14 +60,11 @@ public class Board {
         for (int i=0; i<3; i++) {
             forestCardsPile.addCard(new Cider());
         }
-        for (int i=0; i<13; i++) {
+        for (int i=0; i<11; i++) {
             forestCardsPile.addCard(new Pan());
         }
         for (int i=0; i<5; i++) {
             forestCardsPile.addCard(new Basket());
-        }
-        for (int i=0; i>=0; i++) {
-            forestCardsPile.addCard(new Stick());
         }
     }
 
@@ -83,5 +80,11 @@ public class Board {
         return decayPile;
     }
 
-    public static void updateDecayPile() {}
+    public static void updateDecayPile() {
+        if (Board.getDecayPile().size() == 4) {
+            Board.getDecayPile().clear();
+        }
+        decayPile.add(getForest().removeCardAt(1));
+        forest.add(forestCardsPile.drawCard());
+    }
 }

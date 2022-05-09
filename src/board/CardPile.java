@@ -7,14 +7,14 @@ import java.util.Stack;
 
 public class CardPile {
 
-    Stack<Card> cPile;
+    private final Stack<Card> cPile;
 
     public CardPile() {
         cPile = new Stack<Card>();
     }
 
     public void addCard(Card cards) {
-        cPile.add(cards);
+        cPile.push(cards);
     }
 
     public Card drawCard() {

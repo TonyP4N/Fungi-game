@@ -4,12 +4,12 @@ import cards.Card;
 
 public interface Displayable {
 
-    void add(Card cards);
+     void add(Card cards);
 
-    int size();
+     int size();
 
-    Card getElementAt(int index);
+     Card getElementAt(int index);
 
-    Card removeElement(int index);
+     Card removeElement(int index);
 
 }
