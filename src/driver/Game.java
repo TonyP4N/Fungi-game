@@ -233,27 +233,26 @@ public class Game{
 
 	private static void printTxtCard(Card c) {
 		final int width = 16;
-		String name=c.getName();
-		int blank= width-name.length();
-		System.out.print("|");		
-		if (blank % 2 == 0) { 
-			for (int i=0; i < blank/2; i++) {
+		String name = c.getName();
+		int blank = width - name.length();
+		System.out.print("|");
+		if (blank % 2 == 0) {
+			for (int i = 0; i < blank / 2; i++) {
 				System.out.print(" ");
 			}
 			System.out.print(name);
-			for (int j=0; j < blank/2; j++) {
+			for (int j = 0; j < blank / 2; j++) {
 				System.out.print(" ");
 			}
-		}
-		else {
-			for (int i=0; i < blank/2; i++) {
+		} else {
+			for (int i = 0; i < blank / 2; i++) {
 				System.out.print(" ");
 			}
 			System.out.print(name);
-			for (int j=0; j <= blank/2; j++) {
+			for (int j = 0; j <= blank / 2; j++) {
 				System.out.print(" ");
-			}			
+			}
 		}
-		System.out.print("|");		
-	}	
+		System.out.print("|");
+	}
 }
